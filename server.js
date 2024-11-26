@@ -76,7 +76,7 @@ app.get('/menu/:category', (req, res) => {
     section: category,
     menu: menu
   };    
-  res.render('menu.ejs', response);
+  res.render('category.ejs', response);
 })
 
 app.listen(3000, () => {

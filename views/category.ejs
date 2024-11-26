@@ -75,7 +75,10 @@
                     <% menu.forEach(item=> { %>
                         <% if (item.category===category) { %>
                             <div class="item">
-                                <p class="name"><%= item.name %></p>
+                                <p class="name"><%= item.name %>
+                                    <% if (item.rating === 5) { %>
+                                        ⭐
+                                    <% } %></p>
                                 <p class="details"><%= item.details %></p>
                                 <div class="footer">
                                     <p class="price">$<%= item.price.toFixed(2) %></p>
